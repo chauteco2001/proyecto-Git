@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .encabezado {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+
+        .encabezado h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #333;
+            animation-name: slideIn;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1>Bienvenidos al Curso Git 2023 
+            </h1>
+
+    </div>
+</body>
+
+</html>

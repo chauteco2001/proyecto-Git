@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Trabajo en Equipo (Roberto y Juan Diego)</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+
+  <div class="contenedor">
+
+      <a name="quees"></a>
+       <h2>Que es Git?</h2>           
+      
+         <div class="container">
+          <img src="imagenes/git.jpg" alt="Imagen" />
+          <p> Git almacena y maneja la información de forma muy diferente a esos otros sistemas,  a pesar de que su interfaz de usuario es bastante similar, además,  Git maneja sus datos como, 
+            un conjunto de copias instantáneas de un sistema de archivos miniatura. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente toma una foto del aspecto de todos tus archivos en ese momento y guarda una referencia a esa copia instantánea, 
+            para ser mas especifico Git lo que hace es si cada uno de tus archivos aun no sean modificado Git no almacena ningún archivo, sino que guarda y almacena el enlace anterior que ya tenia almacenado,
+            y maneja cada uno de sus datos como secuenciales en cada una de sus copias instantáneas.
+          </p>
+        </div>  
+         <a name="Estados"></a>
+         <h2> Los 3 Estados de Git</h2>
+         
+          <div class="container-izquierdo">
+           <img src="imagenes/3estados.jpg" alt="Imagen" />
+           <p>
+            3 Principales Estados de un proyecto de Git:
+            Directorio de Git (Git directory)
+            Directorio de Git es donde se almacenan los metadatos y la base de datos de objetos para tu proyecto,
+            es decir es la parte más importante de Git, y es lo que se copia, cuando clonas un repositorio desde otra computadora.
+            
+            Directorio de trabajo (working directory)
+            Directorio de trabajo es una copia de una versión del proyecto, estos archivos se sacan de la base de datos comprimida en el directorio de Git, 
+            y se colocan en disco para que los puedas usar o modifica.
+        
+            Área de preparación (staging area)
+            Área de preparación es un archivo, generalmente contenido en tu directorio de Git, 
+            que almacena información acerca de lo que va a ir en tu próxima confirmación,
+            A veces se le denomina índice (“índex”), pero se está convirtiendo en estándar el referirse a ella como el área de preparación.
+         </p>
+           </div> 
+
+         <a name="init"></a>
+         <h2>Git init</h2>
+
+         <div class="container">
+          <img src="imagenes/init.jpg" alt="Imagen" />
+          <p> Con el comando git init funciona para crear un nuevo directorio llamado git es decir el cual contendrá todos los archivos necesarios del repositorio, dentro de un esqueleto de un repositorio de Git, para poder visualizar los entresijos internos de Git , es decir para poder obtener la información acerca de los archivos recientes y presentes en el directorio git, que acaba de ser creado.
+          </div>     
+       
+      <br>
+         <a name="Status"></a>
+         <h2>Git Status</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/status.jpg" alt="Imagen" />
+          <p>Esto significa que si tenemos un directorio de trabajo limpio  y no tenemos archivos rastreados  ni modificados, git no va encontrar archivos in rastrear de lo contrario si tenemos archivos rastreados y modificados nos aparecerían un listado de archivos, finalmente el comando “git Status”, te indica en cual rama estas es decir en que archivo o carpeta y te indica que no a variado con respeto ala misma rama del servidor, y que por defecto la rama siempre será “master” por ejemplo si nosotros agregamos un archivo simple  y si el archivo no existe y ejecutas el comando 
+            git Status te saldrá que el archivo sin rastrear. 
+          </div> 
+
+
+          <a name="add"></a>
+          <h2>Git Add</h2>
+
+          <div class="container">
+            <img src="imagenes/add.jpg" alt="Imagen" />
+            <p> El comando Git add  sirve y funciona Para marcar cada  uno de los archivos modificados, Marcar archivos como preparados (staged) indica a Git que sus conflictos han sido resueltos.
+            </p>
+          </div> 
+    
+
+         <a name="Git config—global user.email"></a>
+         <h2>Git config-global user.email -- user.name</h2>
+         
+         <div class="container2">
+          <div class="image-wrapper">
+            <img class="img" src="imagenes/user-name.jpg"alt="Imagen 2">
+            <div class="texto">
+              Git config user.email permite reguistrar la configuración de tu correo como usuario además te permite obtener y establecer variables de configuración que controlan el aspecto y funcionamiento de Git.
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img class="img" src="imagenes/global-email.jpg" alt="Imagen 1">
+          <div class="texto">  
+            Con el comando Git config—global user.email espara especificar el correo del usuario que para inicializae el proyecto, solo necesitas  hacer esto una vez si especificas la opción --global,  ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+          </div>
+          </div>
+        </div>
+
+        <a name="Git config user.email"></a>
+         <h2>Git config user.email -- user.name</h2>
+         
+         <div class="container2">
+          <div class="image-wrapper">
+            <img class="img" src="imagenes/user-email.jpg"alt="Imagen 1">
+            <div class="texto">
+              Git config user.name permite reguistrar la configuración de tu nombre de usuario además te permite obtener y establecer variables de configuración que controlan el aspecto y funcionamiento de Git.
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img class="img" src="imagenes/globalname.jpg" alt="Imagen 2">
+          <div class="texto">  
+            Con el comando Git config—global user.mane espara especificar el nombre del usuario que para inicializae el proyecto, solo necesitas  hacer esto una vez si especificas la opción --global,  ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+
+          </div>
+          </div>
+        </div>
+        
+
+         <a name="Git commit"></a>
+         <h2>Git commit</h2>
+         <div class="container">
+          <img src="imagenes/commit.jpg" alt="Imagen" />
+          <p> El comando Git commit funciona para terminar de confirmar la fusión de cada uno de los archivos, también puedes modificar este mensaje añadiendo detalles sobre como ,
+            o has resuelto es decir la función lo considera útil para que otros lo entiendan es decir se trata de indicar por lo que has  hecho, también funciona el comando git commit para confirmar cambiar del archivo.
+          </p>
+         </div> 
+
+
+    
+         <a name="Git checkout"></a>
+         <h2>Git checkout</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/checkout.jpg" alt="Imagen" />
+          <p> Una vez ejecutado el comando git checkout  funciona para saltar parecido a un comando de salto de línea, y principalmente ,
+            este comando realiza dos acciones, realiza la acciones que Mueve el apuntador HEAD de nuevo a la rama master, y revierte los archivos de tu directorio de trabajo, Básicamente, lo que se está haciendo es rebobinar el trabajo que habías hecho temporalmente en la rama testing; de tal forma que puedas avanzar en otra dirección diferente.
+          </div> 
+      
+         <a name="Git restore"></a>
+         <h2>Git Restore</h2>
+
+         <div class="container">
+          <img src="imagenes/restore.jpg" alt="Imagen" />
+          <p >
+            Este comando muestra cada uno de los cambios resultantes de una combinación.
+          </p>
+         </div> 
+
+         <a name="Git Diff"></a>
+         <h2>Git Diff</h2>
+
+         <div class="container-izquierdo">
+          <img src="imagenes/diff.jpg" alt="Imagen" />
+          <p >
+            Este comando muestra cada uno de los cambios resultantes de una combinación.
+          </p>
+        </div> 
+         
+         
+         <a name="Git branch"></a>
+         <h2>Git Branch</h2>
+
+         <div class="container">
+         <img src="imagenes/branch.jpg" alt="Imagen" />
+         <p >
+          Esto creará un nuevo apuntador apuntando a la misma confirmación donde estés actualmente, el comando 
+          git Branch solamente crea una nueva rama, pero no salta a dicha rama.
+        </p>
+        </div> 
+      
+         <a name="Git clone"></a>
+         <h2>Git Clone</h2>
+
+         <div class="container-izquierdo">
+          <img src="imagenes/clone.jpg" alt="Imagen" />
+          <p >
+            El comando git clone  repositorio en un directorio que fue recién creado, 
+            y crea las ramas de seguimiento remotamente para cada una de las ramas de  seguimiento remoto para cada rama del  repositorio clonado.
+          </p>
+        </div> 
+
+         <a name="Git log"></a>
+         <h2>Git Log</h2>
+         <div class="container">
+          <img src="imagenes/log.jpg"alt="Imagen" />
+          <p >
+            El comando git log  Muestra  cada uno de los registros que han sido confirmados.
+          </p>
+         </div> 
+
+         <a name="Git fetch"></a>
+         <h2>Git Fetch</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/fetch(2).jpg" alt="Imagen" />
+          <p >
+            El comando git fetch descarga commits, archivos y referencias de un repositorio remoto a tu repositorio local. Esta acción la llevas a cabo cuando quieres ver en qué han estado trabajando los demás.
+            Es similar al comando svn update porque te permite ver cómo ha progresado el historial central, pero no te obliga a fusionar los cambios en tu repositorio.          
+          </p>
+        </div> 
+
+
+         <a name="Git merge"></a>
+         <h2>Git Merge</h2>
+         <div class="container">
+          <img src="imagenes/merge.jpg" alt="Imagen" />
+          <p >
+            El comando git 90 merge, una vez  Realiza una fusión a tres bandas entre las dos últimas instantáneas de cada rama(C3 y C4) y el ancestro común a ambas (C2); 
+            creando una nueva instantánea (snapshot) y la correspondiente confirmación (commit), sin embargo también hay otra forma de hacerlo: puedes capturar los cambiosintroducidos en C4 y reaplicarlos encima de C3.
+          </p>
+         </div> 
+
+         <a name="Git push"></a>
+         <h2>Git Push</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/merge.jpg" alt="Imagen" />
+          <p >
+            Una vez ejecutado por defecto, el comando git push no transfiere las etiquetas a los servidores remotos, Debes enviar las etiquetas de forma explícita al servidor luego de que las hayas creado.
+          </p>
+        </div>
+         
+         <a name="Git pull"></a>
+         <h2>Git Pull</h2>
+
+         <div class="container">
+          <img src="imagenes/pull.jpg" alt="Imagen" />
+          <p >
+            Una vez que ejecutamos el comando git pull traerás datos del servidor del que clonaste originalmente y se intentará combinar automáticamente la información con el código en el qu e estás trabajando, 
+            automáticamente combinaras vía remota en tu local la información que hallas mandado a traer.
+          </p>
+         </div> 
+
+
+         <a name="Git rm"></a>
+         <h2>Git RM</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/rm.jpg" alt="Imagen" />
+          <p >
+            El comando git rm se usa para eliminar archivos de un repositorio de Git de manera que no aparezca la próxima vez como archivo rastreado, y Se puede considerar que es lo contrario a lo que hace el comando git add.
+  
+          </p>
+        </div>
+
+         <a name="Git switch"></a>
+         <h2>Git Switch</h2>
+         <div class="container">
+          <img src="imagenes/switch.jpg" alt="Imagen" />
+          <p >
+            El comando git Switch función para cambiar entre ramas y poder crearlas si no existen, si tenemos un repositorio y queremos ver las ramas que existen, basta con ejecutar, además, este comando cambia a la rama anterior seleccionada, 
+            si solo hemos seleccionado dos, podremos cambiar de una a otra con este comando, sin necesidad de escribir el nombre, aunque el tabulador debería autocompletar los nombre 
+          </p>
+         </div> 
+
+         
+         <a name="Git remote"></a>
+         <h2>Git Remote</h2>
+         <div class="container-izquierdo">
+          <img src="imagenes/remote.jpg" alt="Imagen" />
+          <p >
+            El comando git remote es una parte de un sistema más amplio que se encarga de sincronizar los cambios. Los registros inscritos mediante el comando git remote se utilizan junto con los comandos git fetch, git push y git pull. 
+            Todos estos comandos tienen sus propias responsabilidades de sincronización, que pueden consultarse en los enlaces correspondientes.
+          </p>
+        </div>
+
+
+ </div>
+</html>
+
+
